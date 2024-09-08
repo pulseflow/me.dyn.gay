@@ -1,0 +1,19 @@
+---
+import siteInfo, { type SocialLink } from '@utils/config';
+import type { GetStaticPaths } from 'astro';
+
+export interface Props { link: SocialLink }
+
+export const getStaticPaths = (() => {
+	return siteInfo.socials.map(link => ({
+		params: { platform: link.platform },
+		props: { link },
+	}));
+}) satisfies GetStaticPaths;
+
+const mastodon = siteInfo.socials.find(l => l.platform === 'mastodon');
+const { link } = Astro.props;
+---
+
+{mastodon && <link href={mastodon.me ?? mastodon.href} rel="me" />}
+<meta content={`0;URL='${link.href}'`} http-equiv="refresh" />

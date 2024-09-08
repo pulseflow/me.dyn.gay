@@ -1,0 +1,52 @@
+{
+	"name": "me.dyn.gay",
+	"type": "module",
+	"version": "1.0.0",
+	"private": true,
+	"author": "Pauline",
+	"license": "MIT",
+	"funding": "https://ko-fi.com/pauliesnug",
+	"homepage": "https://me.dyn.gay",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/pulseflow/me.dyn.gay.git",
+		"directory": "/"
+	},
+	"bugs": "https://github.com/pulseflow/me.dyn.gay/issues",
+	"sideEffects": false,
+	"engines": {
+		"node": ">=20",
+		"pnpm": "9.9.0",
+		"npm": "pnpm",
+		"yarn": "pnpm"
+	},
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro check && astro build",
+		"lint": "pnpm eslint --cache .",
+		"lint:fix": "pnpm lint --fix",
+		"preview": "astro preview",
+		"astro": "astro"
+	},
+	"dependencies": {
+		"@astrojs/check": "^0.9.3",
+		"@astrojs/mdx": "^3.1.5",
+		"@astrojs/rss": "^4.0.7",
+		"@astrojs/sitemap": "^3.1.6",
+		"@unocss/reset": "^0.62.3",
+		"astro": "^4.15.4",
+		"smartypants": "^0.2.2",
+		"typescript": "^5.5.4",
+		"unocss": "^0.62.3"
+	},
+	"devDependencies": {
+		"@flowr/eslint-config": "^4.1.0",
+		"@flowr/utils": "^4.1.0",
+		"@iconify/json": "^2.2.245",
+		"@unocss/eslint-plugin": "^0.62.3",
+		"eslint": "^9.10.0",
+		"eslint-plugin-astro": "^1.2.3",
+		"unplugin-icons": "^0.19.3"
+	}
+}

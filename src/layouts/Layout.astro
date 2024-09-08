@@ -1,0 +1,26 @@
+---
+import BaseHead, { type Props as HeadProps } from '@components/BaseHead.astro';
+import SkipLink from '@components/SkipLink.astro';
+
+export interface Props extends HeadProps {
+	class?: string;
+	bgClass?: string;
+}
+
+const { bgClass = 'bg-gray-50', ...head } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead {...head} />
+	</head>
+
+	<body class:list={['overflow-x-hidden', bgClass, Astro.props.class]}>
+		<SkipLink />
+
+		<main class="h-auto min-h-screen flex flex-col gap-40" id="main">
+			<slot />
+		</main>
+	</body>
+</html>
