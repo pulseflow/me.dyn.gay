@@ -9,7 +9,7 @@
 			"@utils/*": ["./src/utils/*"],
 			"~/*": ["./src/*"]
 		},
-		"types": ["unplugin-icons/types/astro"]
+		"types": ["unplugin-icons/types/astro", "vite-plugin-glsl/ext"]
 	},
 	"exclude": ["node_modules", "dist", "public"]
 }

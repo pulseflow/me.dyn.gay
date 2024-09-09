@@ -4,6 +4,7 @@ import { defineConfig } from 'astro/config';
 
 import unocss from 'unocss/astro';
 import icons from 'unplugin-icons/vite';
+import glsl from 'vite-plugin-glsl';
 
 // https://astro.build/config
 export default defineConfig({
@@ -21,6 +22,6 @@ export default defineConfig({
 	},
 	vite: {
 		ssr: { noExternal: ['smartypants'] },
-		plugins: [icons()],
+		plugins: [icons(), glsl()],
 	},
 });
