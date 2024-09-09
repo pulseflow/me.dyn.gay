@@ -4,7 +4,7 @@
 	"version": "1.0.0",
 	"private": true,
 	"author": "Pauline",
-	"license": "(MIT OR OQL)",
+	"license": "(MIT OR LicenseRef-OQL-1.2)",
 	"funding": "https://ko-fi.com/pauliesnug",
 	"homepage": "https://me.dyn.gay",
 	"repository": {
